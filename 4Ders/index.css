@@ -1,0 +1,39 @@
+:root{
+    --color-light:lightgray;
+    --color-dark:darkgray;
+
+}
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.circle{
+    height: 1.5em;
+    width: 1.5em;
+    background: #000;
+    margin: .5em;
+    border-radius: 50%;
+    animation: pulse infinite .7s;
+    /*animation-iteration-count:infinite;*/
+}
+@keyframes pulse{
+    from{
+        background: var(--color-dark);
+        height: 1.6em;
+        width: 1.6em;
+    }
+    to{
+        background: var(--color-light);
+
+    }
+}
