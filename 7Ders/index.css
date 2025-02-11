@@ -7,3 +7,36 @@ html, body {
     --bg-word: #5134ff;
 }
  
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1::after {
+    content: "";
+    animation: 6s swap infinite;
+    background: var(--bg-word);
+    color: azure;
+    padding: 10px;
+    margin-left: 6px;
+    border-radius: 10px;
+    
+}
+
+@keyframes swap {
+    0%{
+        content: " Merhaba";
+
+    }
+    25%{
+        content: " Hello";
+    }
+    50%{
+        content: " Bonjour";
+
+    }
+    100%{
+        content: " Merhaba ";
+    }
+}
