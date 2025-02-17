@@ -1,0 +1,15 @@
+body, html {
+    margin: 0;
+  } 
+  
+  :root {
+    --spinner: #f3f3f3;
+    --spinner-active: purple;
+  }
+
+
+  .container{
+    height: 200px;
+    width: 200px;
+    
+  }
