@@ -30,8 +30,10 @@ html, body {
 .story {
     display: flex;
     flex-direction: column;
+    text-align:center;
     /*background:#962fbf;*/
     text-align: center;
+    position: relative;
 }
 .img-wrapper {
     height: 60px;
@@ -60,7 +62,7 @@ html, body {
     background: var(--viewed)
 }
 
-.live::after {
+.live:after {
     content: 'LIVE';
     background: var(--grad3);
     font-size: .5em;
@@ -69,7 +71,7 @@ html, body {
     width: 20px;
     padding: 2px 4px;
     position: absolute;
-    top:40%;
+    top:50%;
     margin: auto;
     left: 0;
     right:0;  
